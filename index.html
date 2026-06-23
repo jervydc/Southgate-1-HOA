@@ -2,14 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
- <div class="header">
-
-  <img src="hoa-logo.png" alt="HOA Logo" class="logo">
-
-  <h1>Southgate 1 Community Portal</h1>
-  <p>Transparency • Service • Community Engagement</p>
-
-</div>
+  <title>Southgate 1 Community Portal</title>
 
   <style>
     body {
@@ -24,6 +17,13 @@
       color: white;
       padding: 25px 20px;
       text-align: center;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
     }
 
     .header h1 {
@@ -104,6 +104,7 @@
       width: 80%;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: left;
     }
 
   </style>
@@ -111,10 +112,14 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER (CORRECT POSITION) -->
   <div class="header">
+
+    <img src="hoa-logo.png" alt="HOA Logo" class="logo">
+
     <h1>Southgate 1 Community Portal</h1>
-    <p>Community • Security •Public Transparency</p>
+    <p>Community • Security • Public Transparency</p>
+
   </div>
 
   <!-- NAVIGATION -->
@@ -140,17 +145,40 @@
   <!-- CONTENT -->
   <div class="content">
 
+    <!-- HOME -->
     <div class="card" id="home">
-      <h2>News</h2>
-      <p>Latest community updates or news affecting our community or the surrounding area of Bucal will appear here.</p>
+      <h2>Home</h2>
+
+      <h3>News</h3>
+      <ul>
+        <li>Latest community updates will appear here</li>
+        <li>Infrastructure and safety notices</li>
+      </ul>
+
+      <h3>Announcements</h3>
+      <ul>
+        <li>Upcoming HOA meetings will be posted here</li>
+        <li>Important reminders and advisories</li>
+      </ul>
     </div>
 
+    <!-- SERVICES -->
     <div class="card" id="goodstanding">
-      <h2>Announcements</h2>
-      <p>Announcement regarding upcoming activities will be posted here</p>
+      <h2>Certificate of Good Standing</h2>
+      <p>Request guidelines and process will be posted here.</p>
     </div>
 
- </div>
+    <div class="card" id="complaint">
+      <h2>File a Complaint</h2>
+      <p>Submit community concerns or reports here.</p>
+    </div>
+
+    <div class="card" id="deliverypass">
+      <h2>Delivery Pass</h2>
+      <p>Apply for delivery access passes.</p>
+    </div>
+
+  </div>
 
 </body>
 </html>
