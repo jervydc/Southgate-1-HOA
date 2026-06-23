@@ -20,8 +20,8 @@
     }
 
     .logo {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
       object-fit: contain;
       margin-bottom: 10px;
     }
@@ -112,10 +112,12 @@
 
 <body>
 
-  <!-- HEADER (CORRECT POSITION) -->
+  <!-- HEADER -->
   <div class="header">
 
-    <img src="hoa-logo.png" alt="HOA Logo" class="logo">
+    <!-- FIX: safer image path + fallback -->
+    <img src="./HOA LOGO.jpg" alt="HOA Logo" class="logo"
+         onerror="this.style.display='none'">
 
     <h1>Southgate 1 Community Portal</h1>
     <p>Community • Security • Public Transparency</p>
@@ -145,7 +147,6 @@
   <!-- CONTENT -->
   <div class="content">
 
-    <!-- HOME -->
     <div class="card" id="home">
       <h2>Home</h2>
 
@@ -162,7 +163,6 @@
       </ul>
     </div>
 
-    <!-- SERVICES -->
     <div class="card" id="goodstanding">
       <h2>Certificate of Good Standing</h2>
       <p>Request guidelines and process will be posted here.</p>
