@@ -107,6 +107,23 @@
       text-align: left;
     }
 
+    /* HOME LAYERS */
+    .news-box {
+      background: #ffffff;
+      padding: 15px;
+      margin-top: 10px;
+      border-left: 5px solid #1e90ff;
+      border-radius: 6px;
+    }
+
+    .announcement-box {
+      background: #ffffff;
+      padding: 15px;
+      margin-top: 15px;
+      border-left: 5px solid #0b3d91;
+      border-radius: 6px;
+    }
+
   </style>
 </head>
 
@@ -115,7 +132,6 @@
   <!-- HEADER -->
   <div class="header">
 
-    <!-- FIX: safer image path + fallback -->
     <img src="./HOA LOGO.jpg" alt="HOA Logo" class="logo"
          onerror="this.style.display='none'">
 
@@ -147,22 +163,29 @@
   <!-- CONTENT -->
   <div class="content">
 
+    <!-- HOME -->
     <div class="card" id="home">
       <h2>Home</h2>
 
-      <h3>News</h3>
-      <ul>
-        <li>Latest community updates will appear here</li>
-        <li>Infrastructure and safety notices</li>
-      </ul>
+      <div class="news-box">
+        <h3>News</h3>
+        <ul>
+          <li>Latest community updates will appear here</li>
+          <li>Infrastructure and safety notices</li>
+        </ul>
+      </div>
 
-      <h3>Announcements</h3>
-      <ul>
-        <li>Upcoming HOA meetings will be posted here</li>
-        <li>Important reminders and advisories</li>
-      </ul>
+      <div class="announcement-box">
+        <h3>Announcements</h3>
+        <ul>
+          <li>Upcoming HOA meetings will be posted here</li>
+          <li>Important reminders and advisories</li>
+        </ul>
+      </div>
+
     </div>
 
+    <!-- SERVICES -->
     <div class="card" id="goodstanding">
       <h2>Certificate of Good Standing</h2>
       <p>Request guidelines and process will be posted here.</p>
